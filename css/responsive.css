@@ -1,0 +1,133 @@
+@media (max-width: 1200px) {}
+
+@media (max-width: 1100px) {
+
+  .cursos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0rem;
+  }
+  .cursos-div {
+    max-width: 42% !important;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 860px) {
+  
+  .cursos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0rem;
+  }
+  .cursos-div {
+    max-width: 75% !important;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    right: 0px;
+    background: var(--colors-background-1);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+    text-align: center;
+  }
+
+  #nav.active #menu {
+    height: calc(80vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu li.active {
+    display: none;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 0.6rem;
+    color: var(--cor-padrão);
+    border-bottom: 1px solid var(--cor-extra-1);
+  }
+
+  #menu li:hover {
+    background-color: var(--cor-extra-1);
+    border-radius: 0.4rem;
+    transition: 0.6s;
+    margin-top: -6px;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburguer {
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  .cursos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0rem;
+  }
+  .cursos-div {
+    max-width: 90% !important;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+
+}
+
+@media (max-width: 520px) {
+
+}
+
