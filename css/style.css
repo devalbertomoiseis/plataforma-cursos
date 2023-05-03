@@ -89,6 +89,15 @@ header a.logo {
 }
 
 /* cursos */
+.cursos-programacao{
+  padding: 4rem 0;
+  margin: 2rem 0;
+}
+
+.cursos-programacao h2{
+  margin-bottom: 2rem;
+}
+
 .cursos {
   display: flex;
   justify-content: space-between;
@@ -123,7 +132,16 @@ header a.logo {
 }
 
 .cursos-div h5 {
-  margin-bottom: 2rem;
+  margin-bottom: 1em;
+}
+.cursos-div p{
+  font-size: 1.4rem;
+  margin-bottom: 1em;
+}
+.cursos-div .link-a{
+  text-decoration: none;
+  color: #E891FF;
+  margin-bottom: 1rem;
 }
 
 .cursos-div img{
